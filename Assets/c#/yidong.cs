@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class yidong : MonoBehaviour {
-    public static bool kaiguan = true;
+    public static bool kaiguan;
 	// Use this for initialization
 	void Start () {
-		
+        kaiguan = true;
 	}
 	
 	// Update is called once per frame

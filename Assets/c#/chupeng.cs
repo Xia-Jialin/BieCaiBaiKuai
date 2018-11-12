@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class chupeng : MonoBehaviour {
     private chuangjian a;
-    public static bool b=true;
+    public static bool b;
+    public static bool c;
     // Use this for initialization
     void Start () {
         GameObject game = GameObject.Find("yindao");
         a = game.GetComponent<chuangjian>();
+        b = true;
     }
 	
 	// Update is called once per frame
@@ -20,8 +22,19 @@ public class chupeng : MonoBehaviour {
     {
         if (b)
         {
-            Destroy(this.gameObject);
-            a.Cj();
+            if (c)
+            {
+                Destroy(this.gameObject);
+                a.Cj();
+                fenshu.defen += 1;
+            }
+            else
+            {
+                Destroy(this.gameObject);
+                a.DiLei();
+                fenshu.defen += 1;
+            }
+           
         }
        
     }

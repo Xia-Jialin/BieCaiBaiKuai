@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class dibu : MonoBehaviour {
+public class dilei : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,10 +13,12 @@ public class dibu : MonoBehaviour {
 	void Update () {
 		
 	}
-    private void OnMouseDown()
-    {
-        print("123");
-        yidong.kaiguan = false;
-        chupeng.b = false;
-    }
+    //private void OnMouseDown()
+    //{
+    //    if (a)
+    //    {
+    //        c.jiesuan();
+    //    }
+
+    //}
 }
