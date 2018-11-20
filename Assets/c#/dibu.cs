@@ -18,6 +18,7 @@ public class dibu : MonoBehaviour {
 	}
     private void OnMouseDown()
     {
+        print("123");
         if (a)
         {
             c.jiesuan();

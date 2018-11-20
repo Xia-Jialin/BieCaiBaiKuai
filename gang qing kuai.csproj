@@ -298,6 +298,7 @@
     <Compile Include="Assets\c#\sudukongzhi.cs" />
     <Compile Include="Assets\c#\yidong.cs" />
     <Compile Include="Assets\dilei.cs" />
+    <Compile Include="Assets\qidong.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

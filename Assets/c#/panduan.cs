@@ -20,17 +20,22 @@ public class panduan : MonoBehaviour {
 	}
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.tag!="dilei")
-        {
-            jiesuan();
-        }
-        else
+        //判断是否为地雷块
+        if (col.tag=="dilei")
         {
             Destroy(col, 1f);
             v.DiLei();
+            fenshu.defen += 1;
+        }
+        else
+        {
+            jiesuan();
         }
        
     }
+    /// <summary>
+    /// 对游戏得分进行结算
+    /// </summary>
     public void jiesuan()
     {
         yidong.kaiguan = false;

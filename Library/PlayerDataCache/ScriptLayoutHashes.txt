@@ -149,3 +149,4 @@ a88bed5357657a951075019c2459d8c3 Assembly-CSharp.dll:.sudukongzhi
 7b07ca3ac684ea3358fbfedd5a56af6c Assembly-CSharp.dll:.chuangjian
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.changjing
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.chupeng
+568e3047d66b0be0133cf1ec5bd13cac Assembly-CSharp.dll:.qidong

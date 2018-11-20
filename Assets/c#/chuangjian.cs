@@ -3,10 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class chuangjian : MonoBehaviour {
+    /// <summary>
+    /// 普通模块
+    /// </summary>
     public   GameObject yindao1;
+    /// <summary>
+    /// 地雷模块
+    /// </summary>
     public GameObject yindao2;
-    static  GameObject roadGuideObj;
-    static  Transform roadGuideTrans;
+    /// <summary>
+    /// 保存初始模块
+    /// </summary>
+    private  static  GameObject roadGuideObj;
+    /// <summary>
+    /// 保存模块位置
+    /// </summary>
+    private  static  Transform roadGuideTrans;
 
     // Use this for initialization
     void Start () {
@@ -23,7 +35,9 @@ public class chuangjian : MonoBehaviour {
        
 
     }
-   
+   /// <summary>
+   /// 创建普通块
+   /// </summary>
     public  void Cj()
     {
         int randomValue = Random.Range(0, 3);
@@ -47,6 +61,9 @@ public class chuangjian : MonoBehaviour {
                 break;
         }
     }
+    /// <summary>
+    /// 创建地雷块
+    /// </summary>
     public void Cj2()
     {
         int randomValue = Random.Range(0, 3);
@@ -70,6 +87,9 @@ public class chuangjian : MonoBehaviour {
                 break;
         }
     }
+    /// <summary>
+    /// 随机创建地雷块
+    /// </summary>
     public void DiLei()
     {
         int randomValue = Random.Range(0, 5);
