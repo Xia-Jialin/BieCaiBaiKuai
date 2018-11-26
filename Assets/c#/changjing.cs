@@ -33,8 +33,8 @@ public class changjing : MonoBehaviour {
     /// </summary>
     public void jingdian()
     {
-        sudukongzhi.MoShiKaiGuan=true;
-        chupeng.c = true;
+        sudukongzhi.MoShiKaiGuan=false;
+        chupeng.c = false;
         SceneManager.LoadScene("123");
     }
    /// <summary>
@@ -42,8 +42,8 @@ public class changjing : MonoBehaviour {
    /// </summary>
     public void jisu()
     {
-        chupeng.c = true;
-        sudukongzhi.MoShiKaiGuan = false;
+        sudukongzhi.MoShiKaiGuan = true;
+        chupeng.c = false;
         SceneManager.LoadScene("123");
     }
     /// <summary>
@@ -51,8 +51,8 @@ public class changjing : MonoBehaviour {
     /// </summary>
     public void dilei()
     {
-        chupeng.c = false;
-        sudukongzhi.MoShiKaiGuan = true;
+        chupeng.c = true;
+        sudukongzhi.MoShiKaiGuan = false;
         SceneManager.LoadScene("123");
     }
     /// <summary>

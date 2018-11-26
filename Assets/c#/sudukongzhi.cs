@@ -32,7 +32,7 @@ public class sudukongzhi : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //判断模式类型，是进入经典模式，否进入地雷模式
-        if (MoShiKaiGuan)
+        if (!MoShiKaiGuan)
         {
             //判断kongzhi是否大于最大速度值
             if (kongzhi < maxSpeed)

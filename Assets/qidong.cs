@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class qidong : MonoBehaviour {
     public Sprite Image1;
     public Sprite Image2;
+    /// <summary>
+    /// 暂停开关
+    /// </summary>
     private bool a;
 	// Use this for initialization
 	void Start () {
@@ -16,8 +19,12 @@ public class qidong : MonoBehaviour {
 	void Update () {
 		
 	}
+    /// <summary>
+    /// 暂停开启/关闭
+    /// </summary>
     public void zanting()
     {
+        //是否暂停
         if (a)
         {
             this.GetComponent<Image>().sprite = Image1;

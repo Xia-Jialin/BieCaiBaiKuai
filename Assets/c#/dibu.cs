@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class dibu : MonoBehaviour {
     private panduan c;
+    /// <summary>
+    /// 底部白块点击开关
+    /// </summary>
     public static bool a;
     // Use this for initialization
     void Start () {

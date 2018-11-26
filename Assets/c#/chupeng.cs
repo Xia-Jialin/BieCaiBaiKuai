@@ -33,13 +33,13 @@ public class chupeng : MonoBehaviour {
             if (c)
             {
                 Destroy(this.gameObject);
-                a.Cj();
+                a.DiLei();
                 fenshu.defen += 1;
             }
             else
             {
                 Destroy(this.gameObject);
-                a.DiLei();
+                a.Cj();
                 fenshu.defen += 1;
             }
            

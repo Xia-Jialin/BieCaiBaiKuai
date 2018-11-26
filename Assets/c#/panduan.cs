@@ -5,13 +5,22 @@ using UnityEngine.UI;
 
 public class panduan : MonoBehaviour {
     public  GameObject a;
+    /// <summary>
+    /// 游戏得分
+    /// </summary>
     public Text text;
+    /// <summary>
+    /// 最高分
+    /// </summary>
     public Text text2;
-    private chuangjian v;
+    /// <summary>
+    /// 地雷块创建
+    /// </summary>
+    private chuangjian diLeiKuai;
     // Use this for initialization
     void Start () {
         GameObject game = GameObject.Find("yindao");
-        v = game.GetComponent<chuangjian>();
+        diLeiKuai = game.GetComponent<chuangjian>();
     }
 	
 	// Update is called once per frame
@@ -24,7 +33,7 @@ public class panduan : MonoBehaviour {
         if (col.tag=="dilei")
         {
             Destroy(col, 1f);
-            v.DiLei();
+            diLeiKuai.DiLei();
             fenshu.defen += 1;
         }
         else
