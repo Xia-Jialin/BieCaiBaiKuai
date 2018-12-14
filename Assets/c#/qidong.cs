@@ -41,6 +41,5 @@ public class qidong : MonoBehaviour {
             dibu.a = false;
             a = true;
         }
-        
     }
 }
